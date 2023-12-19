@@ -4,9 +4,7 @@ EXPOSE 80
 
 WORKDIR /app
 
-USER deno
-
 COPY . .
 RUN deno cache src/main.ts
 
-CMD ["run", "--allow-net", "--allow-read", "--allow-write", "src/main.ts"]
+CMD ["run", "--allow-read", "--allow-write", "--allow-net", "src/main.ts"]
