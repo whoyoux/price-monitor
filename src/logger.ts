@@ -11,6 +11,6 @@ export class Logger {
     }
 
     public error(message: string) {
-        console.error(`❌ ${this.prefix} ${message}`);
+        console.error(`${this.prefix} ❌ ${message}`);
     }
 }
